@@ -6,7 +6,6 @@ import { connect } from 'react-redux'
 import CheckoutItem from '../../components/checkout-item/checkout-item.component'
 import { selectCartItems, selectCartTotal } from '../../redux/cart/cart.selectors'
 import { createStructuredSelector } from 'reselect'
-import CartItem from '../../components/cart-item/cart-item.component'
 
 
 const CheckoutPage = ({ cartItems, total }) => {
@@ -41,7 +40,7 @@ const CheckoutPage = ({ cartItems, total }) => {
     )
         : (<div className='checkout-page'>
             <span className='empty-message'>Your cart is empty</span>
-        </div>   
+        </div>
         )
 
 }
